@@ -38,7 +38,16 @@ public class Main {
         // プレイヤーオブジェクトの作成
         Player player = new Player();
 
-        // 以下、ゲームの進行部分...
+	String input = null;
+try {
+    BufferedReader inputuser = new BufferedReader(new InputStreamReader(System.in));
+    input = inputuser.readLine();
+} catch (IOException e) {
+    System.out.print("システムエラー");
+    System.exit(0);
+    return;
+}
+
     }
 }
 
