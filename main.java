@@ -47,6 +47,10 @@ try {
     System.exit(0);
     return;
 }
+// ユーザーの入力が正しいかどうかをチェック
+if (quiz.isCorrect(inputInt)) {
+    player.setCorrectQuizNum(player.getCorrectQuizNum() + 1);
+}
 
     }
 }
