@@ -32,6 +32,6 @@ public class Quiz {
 
     }
     public boolean isCorrect(int givenAnswer) {
-        return givenAnswer == this.answer;
+        return givenAnswer == this.answer; 
     }
 }    
