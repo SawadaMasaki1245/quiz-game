@@ -13,20 +13,25 @@ public class Quiz {
         this.choices = choices;
         this.answer = answer;
     }
-    // クイズの表示機能
+
     public void showQuiz() {
-        // クイズ番号を表示
+
+        //TODO:実装する
+
         System.out.println("[問題" + this.quizNumber + "]");
-        // クイズの本文を表示
+
         System.out.println(this.mainText);
-        // 選択肢を表示
-        for (Choice choice : choices) {
+
+        for(Choice choice: choices) {
+
             System.out.println(choice.getIndex() + "." + choice.getText());
+
         }
-        // ユーザーに回答を促す
-        System.out.print("こたえを入力してください>");
+
+        System.out.print("こたえを入力してください。");
+
     }
     public boolean isCorrect(int givenAnswer) {
         return givenAnswer == this.answer;
     }
-}
+}    
