@@ -57,8 +57,8 @@ if (quiz.isCorrect(inputInt)) {
 }
 
     }
+// ゲーム終了後の結果表示
 System.out.println("[結果]");
-        player.showCorrectQuizNum(); // ゲーム終了時に正答数を表示
+player.showCorrectQuizNum(); // ゲーム終了時に正答数を表示
+	}
 }
-}
-
