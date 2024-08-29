@@ -38,9 +38,13 @@ public class Main {
         // プレイヤーオブジェクトの作成
         Player player = new Player();
 
+	for (Quiz quiz : quizzes) {
+            quiz.showQuiz();
+
 	String input = null;
 try {
-    BufferedReader inputuser = new BufferedReader(new InputStreamReader(System.in));
+    BufferedReader inputuser = new 
+	BufferedReader(new InputStreamReader(System.in));
     input = inputuser.readLine();
 } catch (IOException e) {
     System.out.print("システムエラー");
@@ -53,5 +57,8 @@ if (quiz.isCorrect(inputInt)) {
 }
 
     }
+System.out.println("[結果]");
+        player.showCorrectQuizNum(); // ゲーム終了時に正答数を表示
+}
 }
 
