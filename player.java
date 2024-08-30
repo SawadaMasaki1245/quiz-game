@@ -1,3 +1,5 @@
+package quiz;
+
 public class Player {
     private int correctQuizNum; // 正答数を格納するための属性
 
